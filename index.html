@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TraceRail – Guard‑railed Agentic Automation</title>
+    <!-- Tailwind via CDN for quick proto; swap to local build pipeline later -->
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+  </head>
+  <body class="bg-gray-50 font-sans antialiased text-gray-800">
+    <!-- NAV -->
+    <header class="bg-white shadow-sm">
+      <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <img src="/assets/tracerail-logo.png" alt="TraceRail logo" class="h-8 w-8" />
+        </div>
+        <a
+          href="#waitlist"
+          class="px-4 py-2 rounded-xl bg-indigo-600 text-white hover:bg-indigo-500 transition"
+        >
+          Join Waitlist
+        </a>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="pt-20 pb-16 text-center bg-gradient-to-b from-indigo-50 to-transparent">
+      <div class="max-w-3xl mx-auto px-4">
+        <h2 class="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">
+          Open‑source guardrails for<br class="hidden md:block" />agentic automation at scale
+        </h2>
+        <p class="text-lg md:text-xl text-gray-600 mb-8">
+          Durable workflows, deterministic rules, and human‑in‑the‑loop control—<br />
+          all in one OSS stack you can run on your laptop today.
+        </p>
+        <a
+          href="#waitlist"
+          class="inline-block px-8 py-4 bg-indigo-600 text-white text-lg rounded-2xl shadow hover:bg-indigo-500 transition"
+        >
+          Request Early Access
+        </a>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="py-16">
+      <div class="max-w-6xl mx-auto px-4 grid gap-8 md:grid-cols-3">
+        <!-- Card -->
+        <div class="bg-white rounded-2xl shadow p-6">
+          <h3 class="font-bold text-xl mb-2">Durable State</h3>
+          <p class="text-gray-600">
+            Powered by <span class="font-medium">Temporal</span>—every step is persisted, retried, and auditable
+            so no work is ever lost.
+          </p>
+        </div>
+        <!-- Card -->
+        <div class="bg-white rounded-2xl shadow p-6">
+          <h3 class="font-bold text-xl mb-2">Deterministic Rules</h3>
+          <p class="text-gray-600">
+            <span class="font-medium">Camunda DMN</span> decision tables put policy in the hands of domain experts—swap
+            rules without code changes.
+          </p>
+        </div>
+        <!-- Card -->
+        <div class="bg-white rounded-2xl shadow p-6">
+          <h3 class="font-bold text-xl mb-2">Human‑in‑the‑Loop</h3>
+          <p class="text-gray-600">
+            Task queues and SLA‑aware routing ensure the right reviewer sees the right task at the right time.
+          </p>
+        </div>
+        <!-- Card -->
+        <div class="bg-white rounded-2xl shadow p-6">
+          <h3 class="font-bold text-xl mb-2">Guarded Agents</h3>
+          <p class="text-gray-600">
+            <span class="font-medium">LangGraph</span> &amp; <span class="font-medium">Guardrails AI</span> combine to tame
+            hallucinations and enforce schema contracts.
+          </p>
+        </div>
+        <!-- Card -->
+        <div class="bg-white rounded-2xl shadow p-6">
+          <h3 class="font-bold text-xl mb-2">Multi‑tenant</h3>
+          <p class="text-gray-600">
+            Temporal Namespaces + cost tags let you serve multiple clients while keeping data and metrics isolated.
+          </p>
+        </div>
+        <!-- Card -->
+        <div class="bg-white rounded-2xl shadow p-6">
+          <h3 class="font-bold text-xl mb-2">Open Telemetry</h3>
+          <p class="text-gray-600">
+            End‑to‑end traces and dashboard‑ready metrics for latency, cost, and escalation rate—no black boxes.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- WAITLIST -->
+    <section id="waitlist" class="py-20 bg-indigo-600 text-white text-center">
+      <div class="max-w-2xl mx-auto px-4">
+        <h2 class="text-3xl font-extrabold mb-4">Join the Early Access List</h2>
+        <p class="mb-6 text-lg">
+          Be the first to spin up TraceRail and shape the roadmap.
+        </p>
+        <form
+          action="https://formspree.io/f/{your_form_id}"
+          method="POST"
+          class="flex flex-col sm:flex-row gap-4 justify-center"
+        >
+          <input
+            type="email"
+            name="email"
+            required
+            placeholder="you@example.com"
+            class="flex-1 px-4 py-3 rounded-xl text-gray-800"
+          />
+          <button
+            type="submit"
+            class="px-6 py-3 bg-white text-indigo-600 font-semibold rounded-xl shadow hover:bg-indigo-50 transition"
+          >
+            Sign Up
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-10 bg-gray-100 text-center text-sm text-gray-500">
+      © 2025 TraceRail. All rights reserved. ·
+      <a href="https://github.com/tracerail" class="underline hover:text-gray-700">GitHub</a> ·
+      <a href="mailto:hello@tracerail.io" class="underline hover:text-gray-700">Contact</a>
+    </footer>
+  </body>
+</html>
